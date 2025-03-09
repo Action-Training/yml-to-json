@@ -1,0 +1,12 @@
+{
+  "var": "value",
+  "arrays": [
+    "satu",
+    "dua"
+  ],
+  "struct": {
+    "metre": 12,
+    "centi": 23
+  },
+  "sentences": "arifin the best employer\nfrom 2022 to 2025\nThanks\n"
+}
