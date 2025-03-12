@@ -22,4 +22,4 @@ jobs:
       - name: Test Print
         run: Write-Output "Hello Boss"
       - name: Error Step
-        run: doesnotexits
+        run: doesnotexitsanymore
