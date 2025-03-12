@@ -10,3 +10,16 @@ jobs:
         run: |
           node -v
           npm -v
+  runner-on-mac:
+    runs-on: mac-latest
+    steps:
+      - name: Check Version
+        run: sw_vers
+  test-dependency:
+    runs-on: windows-latest
+    needs: run-shell-commands
+    steps:
+      - name: Test Print
+        run: Write-Output "Hello Boss"
+      - name: Error Step
+        run: doesnotexits
