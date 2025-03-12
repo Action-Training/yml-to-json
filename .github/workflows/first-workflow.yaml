@@ -8,6 +8,5 @@ jobs:
         run: echo "Hello World"
       - name: Check Node and NPM Version
         run: |
-        node -v
-        npm -v
-        
+          node -v
+          npm -v
