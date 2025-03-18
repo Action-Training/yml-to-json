@@ -6,16 +6,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: error message
-      run: echo "::error title=InternaL Error, file=convert.js,line=5,endLine=10,columnn=2,endColumn=8::ERROR. Missing semicolon."
+      run: echo "::error title=InternaL Error,file=convert.js,line=5,endLine=10,columnn=2,endColumn=8::ERROR. Missing semicolon."
     - name: warning message
-      run: echo "::warning title=Beware, file=convert.js,line=5,endLine=10,columnn=2,endColumn=8::WARNING. It's recommended to have text minimum of 25 characters."
+      run: echo "::warning title=Beware,file=convert.js,line=5,endLine=10,columnn=2,endColumn=8::WARNING. It's recommended to have text minimum of 25 characters."
   runner-notice-and-debug-message:
     runs-on: windows-latest
     steps:
     - name: notice message
-      run: echo "::notice title=Attention Please, file=conver.js,line=3,endLine=7,column=2,endColumn=10::You're awesome."
+      run: echo "::notice title=Attention Please,file=convert.js,line=3,endLine=7,column=2,endColumn=10::You're awesome."
     - name: debug message
-      run: echo "::debug title=Debug debug::This is the function to test or prompt variant of runner message."
+      run: echo "::debug title=Debug debug,file=convert.js,line=5,endLine=6,column=4,endColumn=8::This is the function to test or prompt variant of runner message."
   runner-group-of-logs:
     runs-on: macos-latest
     steps:
