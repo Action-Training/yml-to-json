@@ -1,0 +1,35 @@
+name: Working Directory and OS Shell Variant
+on: [ push ]
+defaults:
+  run: 
+    shell: bash
+
+jobs:
+  Testing-Shell-Command-on-Ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Working Directory
+        run: |
+          pwd
+          ls -a
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+  Testing-PowerShell-Python-Command-on-Windows:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - name: Command using PowerShell
+        run:
+          Get-Directory
+          dir
+          print $GITHUB_SHA
+          print $GITHUB_REPOSITORY
+          print $GITHUB_WORKSPACE
+      - name: Command using Python
+        shell: python
+        run: |
+          import platform
+          print(platform.processor())
