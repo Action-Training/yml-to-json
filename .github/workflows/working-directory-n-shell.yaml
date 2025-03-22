@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: Command using PowerShell
         run: |
-          Get-Directory
+          Get-Location
           dir
           print $GITHUB_SHA
           print $GITHUB_REPOSITORY
