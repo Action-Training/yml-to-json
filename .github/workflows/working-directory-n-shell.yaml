@@ -22,7 +22,7 @@ jobs:
         shell: pwsh
     steps:
       - name: Command using PowerShell
-        run:
+        run: |
           Get-Directory
           dir
           print $GITHUB_SHA
