@@ -15,6 +15,9 @@ jobs:
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
+      - name: Change Working Directory
+        working-directory: /home/runner
+        run: pwd
   Testing-PowerShell-Python-Command-on-Windows:
     runs-on: windows-latest
     defaults:
