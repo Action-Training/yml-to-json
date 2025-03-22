@@ -1,5 +1,5 @@
 name: Working Directory and OS Shell Variant
-on: [ push ]
+on: [ workflow_dispatch ]
 defaults:
   run: 
     shell: bash

@@ -1,5 +1,5 @@
 name: Internal Message Prompt
-on: [push]
+on: [workflow_dispatch]
 
 jobs:
   runner-error-and-warning-message:
