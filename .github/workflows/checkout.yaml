@@ -1,5 +1,5 @@
 name: checkout repository in runner machine
-on: [push]
+on: [workflow_dispatch]
 
 jobs:
   checkout-repository:
