@@ -2,14 +2,14 @@ name: Collaborate Action
 on: [ push ]
 
 jobs:
-  name: Perform-Hello-World-JS-Action
-  runs-on: ubuntu-latest
-  steps:
-  - name: Load Hello World Action
-    id: helloworld-js
-    uses: actions/hello-world-javascript-action@main
-    with:
-      who-to-greet: Arifin Puk
-  - name: Print Hello World Action Result
-    run: echo "${{steps.helloworld-js.time}}"
+  Perform-Hello-World-JS-Action:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Load Hello World Action
+      id: helloworld-js
+      uses: actions/hello-world-javascript-action@main
+      with:
+        who-to-greet: Arifin Puk
+    - name: Print Hello World Action Result
+      run: echo "${{steps.helloworld-js.time}}"
     
