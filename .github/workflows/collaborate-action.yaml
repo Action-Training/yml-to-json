@@ -11,5 +11,5 @@ jobs:
       with:
         who-to-greet: Arifin Puk
     - name: Print Hello World Action Result
-      run: echo "${{steps.helloworld-js.time}}"
+      run: echo "${{steps.helloworld-js.outputs.time}}"
     
