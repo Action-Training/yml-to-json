@@ -1,5 +1,5 @@
 name: Collaborate Action
-on: [ push ]
+on: [workflow_dispatch]
 
 jobs:
   Perform-Hello-World-JS-Action:
